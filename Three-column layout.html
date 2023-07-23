@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three-Column Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 2rem;
+        }
+
+        .column {
+            flex: 1;
+            margin: 0 1rem;
+            background-color:grey;
+            padding: 10rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .column {
+                flex: 100%;
+                margin: 1rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Three-Column Layout</h1>
+    </header>
+    <main>
+        <div class="column">
+            <h2>Column 1</h2>
+            
+        </div>
+        <div class="column">
+            <h2>Column 2</h2>
+            
+        </div>
+        <div class="column">
+            <h2>Column 3</h2>
+            
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Santhoshri Sivakumar. All rights reserved.</p>
+    </footer>
+</body>
+</html>
